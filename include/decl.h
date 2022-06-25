@@ -328,6 +328,7 @@ E NEARDATA struct sinfo {
 	int exiting;		/* an exit handler is executing */
 	int in_moveloop;
 	int in_impossible;
+	int preserve_locks;
 #ifdef PANICLOG
 	int in_paniclog;
 #endif
