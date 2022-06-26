@@ -8,7 +8,7 @@
 # to keep distribution versions if they modify things.
 
 # Were we started from the top level?  Cope.
-if [ -f sys/unix/Makefile.top ]; then cd sys/unix; fi
+if [ -f sys/osx/Makefile.top ]; then cd sys/osx; fi
 
 if [ $# -gt 0 ] ; then
 #	First, try to make a symbolic link.
@@ -20,11 +20,11 @@ if [ $# -gt 0 ] ; then
 		rm -f Makefile
 
 		umask 0
-		ln -s sys/unix/Makefile.top ../../Makefile
-		ln -s ../sys/unix/Makefile.dat ../../dat/Makefile
-		ln -s ../sys/unix/Makefile.doc ../../doc/Makefile
-		ln -s ../sys/unix/Makefile.src ../../src/Makefile
-		ln -s ../sys/unix/Makefile.utl ../../util/Makefile
+		ln -s sys/osx/Makefile.top ../../Makefile
+		ln -s ../sys/osx/Makefile.dat ../../dat/Makefile
+		ln -s ../sys/osx/Makefile.doc ../../doc/Makefile
+		ln -s ../sys/osx/Makefile.src ../../src/Makefile
+		ln -s ../sys/osx/Makefile.utl ../../util/Makefile
 		exit 0
 	fi
 fi
